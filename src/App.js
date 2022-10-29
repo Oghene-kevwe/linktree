@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { ReactDOM } from "react";
+import { Profile } from "./profile";
+import { Link } from "./link";
+import { SocialIcons } from "./social-icons";
+import { Footer } from "./footer";
 
-function App() {
+// CSS
+import "./index.css";
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Profile />
+      <Link />
+      <SocialIcons />
+      <Footer/>
+    </main>
   );
-}
-
-export default App;
+};
