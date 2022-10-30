@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="zuri-logo">
             <img src="images/zuri-internship-logo.svg" alt="" />
         </div>
-        <h4>HNG Internship 9 frontend task</h4>
+        <h4>HNG Internship 9 Frontend Task</h4>
         <div className="i4G-logo">
             <img src="images/I4G.svg" alt="" />
         </div>

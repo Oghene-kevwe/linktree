@@ -2,14 +2,29 @@ export const Profile = () => {
   return (
     <nav>
       <div className="nav-container">
-        {/* mobile share btn */}
-        <button className="mobile-share-btn">
-          <img src="images/iconhorizontal.svg" alt="" />
-        </button>
+        {/* share btn */}
+        <div className="share-btn-container">
+          <button className="mobile-share-btn">
+            <img
+              src="images/iconhorizontal.svg"
+              alt=""
+              className="mobile-share-icon"
+            />
+            <img
+              src="images/iconwebsharebtn.svg"
+              alt=""
+              className="web-share-icon"
+            />
+          </button>
+          <div className="tooltip">
+            <h4>Share Link</h4>
+            <div className="tooltip-arrow"></div>
+          </div>
+        </div>
 
         {/* profile content */}
         <div className="profile-container">
-            {/* profile image */}
+          {/* profile image */}
           <div className="overlay-container">
             <div className="overlay">
               <img src="images/iconcamera-icon.svg" alt="" />

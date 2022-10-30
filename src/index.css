@@ -25,6 +25,7 @@ a {
 }
 body {
   font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
 }
 
 /* NAVBAR */
@@ -32,6 +33,7 @@ body {
 nav {
   padding: 4rem 0 2rem;
 }
+
 .nav-container {
   padding: 0 1rem;
   position: relative;
@@ -40,10 +42,46 @@ nav {
   align-items: center;
 }
 
-.mobile-share-btn {
+.share-btn-container {
   position: absolute;
   right: 1rem;
   top: -1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 10rem;
+  direction: rtl;
+}
+
+.tooltip {
+  width: 85px;
+  height: 34px;
+  background: #101828;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+  position: relative;
+  visibility: hidden;
+}
+
+.tooltip h4 {
+  color: white;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: -6px;
+  background: #101828;
+  border-radius: 1px;
+  transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+}
+
+.mobile-share-btn {
   height: 2.5rem;
   width: 2.5rem;
   border: 1px dashed #d0d5dd;
@@ -54,12 +92,16 @@ nav {
   cursor: pointer;
 }
 
+.mobile-share-btn:active {
+  background: #f9fafb;
+}
+
 .mobile-share-btn img {
   width: 50%;
 }
 
-.mobile-share-btn:active {
-  background: #f9fafb;
+.web-share-icon {
+  display: none;
 }
 
 .profile-container {
@@ -67,6 +109,7 @@ nav {
   flex-direction: column;
   row-gap: 1.5rem;
 }
+
 .overlay-container {
   border-radius: 100%;
   height: fit-content;
@@ -108,12 +151,14 @@ nav {
   row-gap: 1.5rem;
   list-style-type: none;
   text-transform: capitalize;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .link-btn {
   background: var(--links-bg-color);
   color: var(--text-color);
-  width: 21.4rem;
+  width: 100%;
   height: 4.25rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
@@ -141,7 +186,7 @@ nav {
 /* FOOTER */
 footer {
   padding: 2rem 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 .horizontal-bar {
@@ -168,4 +213,51 @@ footer {
 .footer-container h4 {
   color: var(--gray-500);
   font-weight: 400;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 760px) {
+  nav {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .overlay:hover {
+    opacity: 1;
+  }
+  .share-btn-container {
+    right: 5rem;
+  }
+  .mobile-share-btn:hover {
+    background: #f9fafb;
+  }
+
+  .mobile-share-btn:hover + .tooltip {
+    visibility: visible;
+  }
+
+  .mobile-share-icon {
+    display: none;
+  }
+  .web-share-icon {
+    display: block;
+  }
+  .links-container {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .link-btn:hover {
+    background: #d0d5dd;
+  }
+  footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .zuri-logo {
+    width: 12rem;
+  }
 }
