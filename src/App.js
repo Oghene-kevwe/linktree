@@ -1,4 +1,3 @@
-import { ReactDOM } from "react";
 import { Profile } from "./profile";
 import { Link } from "./link";
 import { SocialIcons } from "./social-icons";
