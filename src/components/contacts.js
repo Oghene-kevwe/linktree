@@ -47,7 +47,7 @@ export const Contact = () => {
             <div>
               <input type="checkbox" />
               <span>
-                You agree to providing your data to NAME who may contact you.
+                You agree to providing your data to Annette Black who may contact you.
               </span>
             </div>
             {/* submit button */}
