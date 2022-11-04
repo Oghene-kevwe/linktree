@@ -4,7 +4,8 @@ export const Links = () => {
   return (
     <section className="links-container">
       {/* twitter */}
-      <a href="https://twitter.com/PraiseIdise" className="link-btn" >
+      <a href="https://twitter.com/PraiseIdise" className="link-btn" 
+        target="_blank">
         <span>Twitter link</span>
       </a>
       {/* zuri team */}
