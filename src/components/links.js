@@ -57,7 +57,7 @@ export const Links = () => {
         design books
       </a>
       {/* contact */}
-      <Link to='/contact'  className="link-btn">contact</Link>
+      <Link to='/contact'  className="link-btn" id="contact">contact</Link>
     </section>
   );
 };
