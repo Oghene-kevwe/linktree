@@ -32,7 +32,7 @@ export const Profile = () => {
             <img src="images/profile_img.svg" alt="" id="profile_img" />
           </div>
           <div>
-            <h4 id="twitter">Annette test</h4>
+            <h4 id="twitter">Annette Black</h4>
             <h4 id="slack">Idise Praise</h4>
           </div>
         </div>

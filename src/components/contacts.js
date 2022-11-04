@@ -1,6 +1,8 @@
 export const Contact = () => {
   return (
     <section className="contact-section">
+      <div className="contact-content">
+
       <article className="contact-article-1">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
@@ -8,6 +10,7 @@ export const Contact = () => {
       <article className="contact-article-2">
         <div className="form-container">
           <form action="" className="form">
+            <div className="name-container">
             {/* first name */}
             <div className="form_field">
               <label htmlFor="firstname">First name</label>
@@ -25,6 +28,7 @@ export const Contact = () => {
                 id="last_name"
                 placeholder="Enter your last name"
               />
+            </div>
             </div>
             {/* email */}
             <div className="form_field">
@@ -44,7 +48,7 @@ export const Contact = () => {
               ></textarea>
             </div>
             {/* checkbox */}
-            <div>
+            <div className="check-box-container">
               <input type="checkbox" />
               <span>
                 You agree to providing your data to Annette Black who may contact you.
@@ -57,6 +61,7 @@ export const Contact = () => {
           </form>
         </div>
       </article>
+      </div>
     </section>
   );
 };
