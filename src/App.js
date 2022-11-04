@@ -1,7 +1,9 @@
-import { Profile } from "./pages/profile";
-import { Link } from "./pages/link";
-import { SocialIcons } from "./social-icons";
-import { Footer } from "./pages/footer";
+import { Home } from "./homepage";
+import { Profile } from "./components/profile";
+import { SocialIcons } from "./components/social-icons";
+import { Footer } from "./components/footer";
+import { Links } from "./components/links";
+import { Contact } from "./components/contacts";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // CSS
@@ -11,17 +13,11 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Profile />} />
-        <Route path="link" element={<Link />} />
-        <Route path=" " element={<SocialIcons />} />
-        <Route path="/" element={<Footer />} />
-        {/* <main>
-      <Profile />
-      <Link />
-      <SocialIcons />
-      <Footer/>
-    </main> */}
+        <Route path="/" element={<Home />} >
+        </Route>
+          <Route path="contact" element={<Contact/>} />
       </Routes>
+      <Footer></Footer>
     </BrowserRouter>
   );
 };

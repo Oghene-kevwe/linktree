@@ -1,4 +1,6 @@
-export const Link = () => {
+import { Link } from "react-router-dom";
+
+export const Links = () => {
   return (
     <section className="links-container">
       {/* twitter */}
@@ -54,6 +56,8 @@ export const Link = () => {
       >
         design books
       </a>
+      {/* contact */}
+      <Link to='/contact'  className="link-btn">contact</Link>
     </section>
   );
 };
