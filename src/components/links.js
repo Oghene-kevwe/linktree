@@ -41,7 +41,8 @@ export const Links = () => {
     <section className="links-container">
       {data.map(({ id, link, title, name }) => {
         return (
-          <a
+          <a 
+          key={id}
             href={link}
             className="link-btn"
             id={id}
